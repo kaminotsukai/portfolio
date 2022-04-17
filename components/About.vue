@@ -11,6 +11,24 @@
         <img src="/images/profile.png" alt="profile" />
       </figure>
     </div>
+    <div class="social-icons">
+      <p class="field">
+        <a
+          class="social-btn"
+          href="https://github.com/kaminotsukai"
+          target="_blank"
+        >
+          <img src="/images/github-svgrepo-com.svg" alt="github" />
+        </a>
+        <a
+          class="social-btn"
+          href="https://twitter.com/kami_tsukai"
+          target="_blank"
+        >
+          <img src="/images/twitter-svgrepo-com.svg" alt="twitter" />
+        </a>
+      </p>
+    </div>
   </section>
 </template>
 
@@ -59,5 +77,24 @@ export default Vue.extend({
 
 .about-desc {
   flex: 1;
+}
+.field {
+  display: flex;
+  justify-content: center;
+}
+.social-btn {
+  height: 47px;
+  width: 47px;
+  border: 1px solid $color-text-main;
+  border-radius: 100%;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > img {
+    height: 20px;
+    width: 20px;
+  }
 }
 </style>

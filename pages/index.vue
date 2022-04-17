@@ -2,7 +2,7 @@
   <div>
     <Hero />
     <About />
-    <Work />
+    <!-- <Work /> -->
   </div>
 </template>
 
