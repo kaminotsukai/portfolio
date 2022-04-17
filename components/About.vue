@@ -1,6 +1,6 @@
 <template>
   <section class="about-section">
-    <h1 class="section-title">About</h1>
+    <h1 class="section-title">About...</h1>
     <div class="about-body">
       <div class="about-desc">
         <p>
@@ -34,6 +34,8 @@ export default Vue.extend({
 }
 .about-desc {
   > p {
+    font-family: "Murecho", sans-serif;
+    font-weight: 200;
     line-height: 2em;
   }
 }
