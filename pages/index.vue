@@ -1,39 +1,6 @@
 <template>
   <div>
-    <section class="hero-section">
-      <div>
-        <h1 class="hero-title">Makoto Kami</h1>
-      </div>
-      <div>
-        <p class="hero-desc">Hi, I'm web developer.</p>
-      </div>
-      <div>
-        <svg
-          id="arrow-down"
-          width="50px"
-          height="50px"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          color="#8892b0"
-        >
-          <path
-            d="M15.5 7L12 10.5L8.5 7"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M15.5 13L12 16.5L8.5 13"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
-    </section>
-
+    <Hero />
     <section class="about-section">
       <h1>About</h1>
       <div class="about-body">
@@ -54,38 +21,25 @@
 
 <script lang="ts">
 import Vue from "vue";
+import Hero from "@/components/Hero.vue";
 
 export default Vue.extend({
   name: "IndexPage",
+  components: {
+    Hero,
+  },
 });
 </script>
 
-<style>
+<style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import "~/assets/scss/main.scss";
 
 body {
-  background-color: #0a192f;
+  background-color: $color-bg-theme;
   font-family: "Roboto Mono", monospace;
   padding: 0 40px;
   color: #e6f1ff;
-}
-
-.hero-title {
-  font-size: 50px;
-  color: #e6f1ff;
-}
-.hero-desc {
-  color: #8892b0;
-}
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-.hero-section div:last-child {
-  padding-top: 100px;
 }
 
 .about-body {
