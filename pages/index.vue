@@ -1,18 +1,7 @@
 <template>
   <div>
     <Hero />
-    <section class="about-section">
-      <h1>About</h1>
-      <div class="about-body">
-        <div class="about-desc">
-          加味真（かみまこと）と申します！私は都内のSES企業で約1年フロントエンドの開発を行う。その後、受託企業に入社し2年間で約10個のプロジェクトにWebエンジニアとして参画。ゼロイチのプロダクトが多かったため速度を追い求めつつ品質の高いサービス開発を心がける。現在は、株式会社ヤプリでノーコードプラットフォームYappliの開発にサーバーサイドエンジニアとして働いています。
-        </div>
-        <div>
-          <img height="300" src="../static/images/profile.png" alt="profile" />
-        </div>
-      </div>
-    </section>
-
+    <About />
     <section class="works">
       <h1>Works</h1>
     </section>
@@ -22,11 +11,13 @@
 <script lang="ts">
 import Vue from "vue";
 import Hero from "@/components/Hero.vue";
+import About from "@/components/About.vue";
 
 export default Vue.extend({
   name: "IndexPage",
   components: {
     Hero,
+    About,
   },
 });
 </script>
@@ -38,23 +29,25 @@ export default Vue.extend({
 body {
   background-color: $color-bg-theme;
   font-family: "Roboto Mono", monospace;
-  padding: 0 40px;
+  padding: 0px 150px;
   color: #e6f1ff;
 }
 
-.about-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 700px) {
-  .about-body {
-    flex-direction: column;
+@media screen and (max-width: 1080px) {
+  body {
+    padding: 0px 50px;
   }
 }
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0px 30px;
+  }
+}
+</style>
 
-.about-desc {
-  flex: 1;
+<style>
+section {
+  max-width: 900px;
+  margin: 0 auto;
 }
 </style>
