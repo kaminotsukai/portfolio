@@ -2,9 +2,7 @@
   <div>
     <Hero />
     <About />
-    <section class="works">
-      <h1>Works</h1>
-    </section>
+    <Work />
   </div>
 </template>
 
@@ -12,12 +10,14 @@
 import Vue from "vue";
 import Hero from "@/components/Hero.vue";
 import About from "@/components/About.vue";
+import Work from "@/components/Work.vue";
 
 export default Vue.extend({
   name: "IndexPage",
   components: {
     Hero,
     About,
+    Work,
   },
 });
 </script>
