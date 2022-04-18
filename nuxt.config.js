@@ -23,10 +23,13 @@ export default {
   },
 
   router: {
-    base: "/portfolio/"
+    base: "/portfolio"
   },
   generate: {
     dir: 'docs'
+  },
+  static: {
+    prefix: false
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
