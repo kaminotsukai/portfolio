@@ -8,7 +8,7 @@
         </p>
       </div>
       <figure class="profile-image">
-        <img src="/images/profile.png" alt="profile" />
+        <img src="~/assets/images/profile.png" alt="profile" />
       </figure>
     </div>
     <div class="social-icons">
@@ -18,14 +18,14 @@
           href="https://github.com/kaminotsukai"
           target="_blank"
         >
-          <img src="/images/github-svgrepo-com.svg" alt="github" />
+          <img src="~/assets/images/github-svgrepo-com.svg" alt="github" />
         </a>
         <a
           class="social-btn"
           href="https://twitter.com/kami_tsukai"
           target="_blank"
         >
-          <img src="/images/twitter-svgrepo-com.svg" alt="twitter" />
+          <img src="~/assets/images/twitter-svgrepo-com.svg" alt="twitter" />
         </a>
       </p>
     </div>
