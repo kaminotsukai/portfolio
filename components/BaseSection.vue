@@ -27,5 +27,6 @@ export default Vue.extend({
 .section-title {
   font-size: min(5vw, 40px);
   text-align: center;
+  margin-bottom: 2em;
 }
 </style>

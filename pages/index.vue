@@ -4,6 +4,9 @@
     <BaseSection title="About...">
       <About />
     </BaseSection>
+    <BaseSection title="Experience...">
+      <Experience />
+    </BaseSection>
     <!-- <Work /> -->
   </div>
 </template>
@@ -14,6 +17,7 @@ import BaseSection from "@/components/BaseSection.vue";
 import Hero from "@/components/Hero.vue";
 import About from "@/components/About.vue";
 import Work from "@/components/Work.vue";
+import Experience from "@/components/Experience.vue";
 
 export default Vue.extend({
   name: "IndexPage",
@@ -22,6 +26,7 @@ export default Vue.extend({
     Hero,
     About,
     Work,
+    Experience,
   },
 });
 </script>
