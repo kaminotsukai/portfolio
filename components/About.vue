@@ -1,6 +1,5 @@
 <template>
-  <section class="about-section">
-    <h1 class="section-title">About...</h1>
+  <div>
     <div class="about-body">
       <div class="about-desc">
         <p>
@@ -29,7 +28,7 @@
         </a>
       </p>
     </div>
-  </section>
+  </div>
 </template>
 
 <script lang="ts">
@@ -43,13 +42,6 @@ export default Vue.extend({
 <style lang="scss" scoped>
 @import "~/assets/scss/main.scss";
 
-.about-section {
-  height: 100vh;
-}
-.section-title {
-  font-size: min(5vw, 40px);
-  text-align: center;
-}
 .about-desc {
   > p {
     font-family: "Murecho", sans-serif;
