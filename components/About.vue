@@ -55,10 +55,7 @@ export default Vue.extend({
     object-fit: cover;
     max-width: 240px;
     border-radius: 30px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+    margin: 40px;
   }
 }
 .about-body {
