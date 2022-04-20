@@ -22,7 +22,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .section {
-  height: 100vh;
+  margin-bottom: 12em;
 }
 .section-title {
   font-size: min(5vw, 40px);
