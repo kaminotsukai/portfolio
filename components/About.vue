@@ -45,8 +45,9 @@ export default Vue.extend({
 .about-desc {
   > p {
     font-family: "Murecho", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 2em;
+    font-size: 16px;
   }
 }
 .profile-image {
@@ -54,6 +55,10 @@ export default Vue.extend({
     object-fit: cover;
     max-width: 240px;
     border-radius: 30px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
   }
 }
 .about-body {
