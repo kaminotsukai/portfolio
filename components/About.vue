@@ -1,6 +1,5 @@
 <template>
-  <section class="about-section">
-    <h1 class="section-title">About...</h1>
+  <div>
     <div class="about-body">
       <div class="about-desc">
         <p>
@@ -29,7 +28,7 @@
         </a>
       </p>
     </div>
-  </section>
+  </div>
 </template>
 
 <script lang="ts">
@@ -43,18 +42,12 @@ export default Vue.extend({
 <style lang="scss" scoped>
 @import "~/assets/scss/main.scss";
 
-.about-section {
-  height: 100vh;
-}
-.section-title {
-  font-size: min(5vw, 40px);
-  text-align: center;
-}
 .about-desc {
   > p {
     font-family: "Murecho", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 2em;
+    font-size: 16px;
   }
 }
 .profile-image {
@@ -62,6 +55,10 @@ export default Vue.extend({
     object-fit: cover;
     max-width: 240px;
     border-radius: 30px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
   }
 }
 .about-body {
