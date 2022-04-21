@@ -15,9 +15,23 @@
           </h3>
           <p>{{ company.during.start }} - {{ company.during.end }}</p>
           <div class="career-body">
+            <p class="list-title">業務内容</p>
             <ul>
-              <li v-for="(content, index) in company.contents" :key="index">
-                {{ content }}
+              <li
+                v-for="(desc, index) in company.job_descriptions"
+                :key="index"
+              >
+                {{ desc }}
+              </li>
+            </ul>
+
+            <p class="list-title">経験</p>
+            <ul>
+              <li
+                v-for="(experience, index) in company.experiences"
+                :key="index"
+              >
+                {{ experience }}
               </li>
             </ul>
           </div>
@@ -43,7 +57,18 @@ export default Vue.extend({
             start: "November 2021",
             end: "Present",
           },
-          contents: ["GCP, AWSを用いた集計基盤の構築", "クーポンの機能拡張"],
+          job_descriptions: [
+            "Yappliの設計・開発",
+            "機能改善、インシデント対応",
+            "他部署とのコミュニケーション",
+          ],
+          experiences: [
+            "GCP, AWSを用いた集計・分析基盤の構築",
+            "NoSQLを利用した大容量データ処理",
+            "Goを用いたレイヤードアーキテクチャ設計",
+            "testingパッケージを用いた単体テストの作成",
+            "AppsFlyer Data Lockerを利用したBigQueryへのローデータエクスポート",
+          ],
         },
         {
           name: "GIBJapan",
@@ -53,9 +78,29 @@ export default Vue.extend({
             start: "January 2020",
             end: "October 2021",
           },
-          contents: [
+          job_descriptions: [
             "Laravel/Vue.jsを用いたWebアプリケーション開発",
             "メンバーの技術サポート、工数管理",
+          ],
+          experiences: [
+            "不動産売買システムの新規開発",
+            "不動産ポータルサイトの新規開発",
+            "学習支援サービスの開発",
+            "チャットボット管理システムの開発",
+            "M&Aマッチングサービスのプロトタイプ開発",
+            "サプリメントECサイトのリプレース業務",
+            "Pupeteerを用いたスクレイピングスクリプトの作成",
+            "Stripeを用いた決済処理の作成",
+            "Line Messaging SDKを用いたチャットボットの開発",
+            "Slackへのアラート通知作成",
+            "AWSを用いたインフラの構築",
+            "PHPUnitによる単体テストの導入",
+            "AdobeXDを用いたデザインカンプの作成",
+            "Pub, Stylusを用いたLPの作成",
+            "issue駆動開発の導入",
+            "コーディング規約の策定",
+            "Dockerによるローカル開発の導入",
+            "クライアント用のドキュメント作成",
           ],
         },
         {
@@ -66,9 +111,13 @@ export default Vue.extend({
             start: "January 2019",
             end: "November 2019",
           },
-          contents: [
+          job_descriptions: [
             "Nuxt.jsを用いたフロントエンド開発",
             "Javaを用いたAndroidアプリの改修業務",
+          ],
+          experiences: [
+            "オンラインストレージサービスのリプレース業務",
+            "チャットアプリの改修業務",
           ],
         },
       ],
@@ -100,6 +149,11 @@ export default Vue.extend({
   li {
     margin-bottom: 3px;
   }
+}
+.list-title {
+  margin-left: -15px;
+  margin-top: 2em;
+  color: $color-text-main;
 }
 </style>
 
