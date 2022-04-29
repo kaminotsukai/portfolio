@@ -12,20 +12,13 @@
     </div>
     <div class="social-icons">
       <p class="field">
-        <a
-          class="social-btn"
-          href="https://github.com/kaminotsukai"
-          target="_blank"
-        >
-          <img src="~/assets/images/github-svgrepo-com.svg" alt="github" />
-        </a>
-        <a
-          class="social-btn"
-          href="https://twitter.com/kami_tsukai"
-          target="_blank"
-        >
-          <img src="~/assets/images/twitter-svgrepo-com.svg" alt="twitter" />
-        </a>
+        <SocialButton
+          v-for="(icon, index) in icons"
+          :key="index"
+          :href="icon.link"
+          :imageSrc="icon.imageSrc"
+          :alt="icon.name"
+        />
       </p>
     </div>
   </div>
@@ -33,9 +26,34 @@
 
 <script lang="ts">
 import Vue from "vue";
+import SocialButton from "@/components/SocialButton.vue";
 
 export default Vue.extend({
   name: "Hero",
+  components: {
+    SocialButton,
+  },
+  data() {
+    return {
+      icons: [
+        {
+          name: "github",
+          link: "https://github.com/kaminotsukai",
+          imageSrc: "github-svgrepo-com.svg",
+        },
+        {
+          name: "twitter",
+          link: "https://twitter.com/kami_tsukai",
+          imageSrc: "twitter-svgrepo-com.svg",
+        },
+        {
+          name: "hatena",
+          link: "https://makoo5.hatenablog.com/",
+          imageSrc: "hatena-bookmark-svgrepo-com.svg",
+        },
+      ],
+    };
+  },
 });
 </script>
 
@@ -75,20 +93,5 @@ export default Vue.extend({
 .field {
   display: flex;
   justify-content: center;
-}
-.social-btn {
-  height: 47px;
-  width: 47px;
-  border: 1px solid $color-text-main;
-  border-radius: 100%;
-  margin: 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  > img {
-    height: 20px;
-    width: 20px;
-  }
 }
 </style>
