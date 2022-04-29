@@ -25,9 +25,6 @@ export default {
   router: {
     base: "/portfolio"
   },
-  generate: {
-    dir: 'docs'
-  },
   static: {
     prefix: false
   },
