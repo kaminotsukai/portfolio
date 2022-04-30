@@ -50,7 +50,7 @@ export default Vue.extend({
     return {
       companies: [
         {
-          name: "Yappli",
+          name: "ヤプリ",
           job: "サーバーサイドエンジニア",
           url: "https://yappli.co.jp/",
           during: {
@@ -60,12 +60,11 @@ export default Vue.extend({
           job_descriptions: [
             "Yappliの設計・開発",
             "機能改善、インシデント対応",
-            "他部署とのコミュニケーション",
           ],
           experiences: [
+            "Go/gRPCを用いたWebアプリケーションの開発",
+            "Nuxt/TypeScriptを用いたフロントエンド開発",
             "GCP, AWSを用いた集計・分析基盤の構築",
-            "NoSQLを利用した大容量データ処理",
-            "Goを用いたレイヤードアーキテクチャ設計",
             "testingパッケージを用いた単体テストの作成",
             "AppsFlyer Data Lockerを利用したBigQueryへのローデータエクスポート",
           ],
