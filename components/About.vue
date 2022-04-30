@@ -11,7 +11,7 @@
           <p>Web Developer</p>
         </div>
         <div>
-          <h1>Makoto Kami</h1>
+          <h1>Makoto Kami （{{ age }}）</h1>
         </div>
         <div>
           <p>
@@ -63,6 +63,15 @@ export default Vue.extend({
         },
       ],
     };
+  },
+  computed: {
+    age() {
+      const today: Date = new Date();
+      const birthday: Date = new Date("1999-06-18");
+      return Math.floor(
+        (today.getTime() - birthday.getTime()) * 3.17 * 10 ** -11
+      );
+    },
   },
 });
 </script>
