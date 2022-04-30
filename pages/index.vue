@@ -1,9 +1,9 @@
 <template>
   <div>
+    <Hero />
     <BaseSection>
       <About />
     </BaseSection>
-    <!-- <Hero /> -->
     <BaseSection title="Experience...">
       <Experience />
     </BaseSection>

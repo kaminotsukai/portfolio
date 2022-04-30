@@ -141,9 +141,11 @@ export default Vue.extend({
 }
 .career-title {
   margin-bottom: 5px;
+  color: $color-text-main;
 }
 .career-body {
   margin: 15px;
+  color: $color-text-main;
 
   li {
     margin-bottom: 3px;
