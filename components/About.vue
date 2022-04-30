@@ -1,17 +1,27 @@
 <template>
   <div>
-    <div class="about-body">
-      <div class="about-desc">
-        <p>
-          加味真（かみまこと）と申します！都内のSES企業で約1年フロントエンドの開発を行った後、受託企業に入社し2年間で約10個のプロジェクトにWebエンジニアとして参画。ゼロイチのプロダクトが多かったため速度を追い求めつつ品質の高いサービス開発を心がける。現在は、株式会社ヤプリでノーコードプラットフォームYappliの開発にサーバーサイドエンジニアとして携わっています。
-        </p>
+    <div class="about-card">
+      <div>
+        <figure class="profile-image">
+          <img src="~/assets/images/profile.png" alt="profile" />
+        </figure>
       </div>
-      <figure class="profile-image">
-        <img src="~/assets/images/profile.png" alt="profile" />
-      </figure>
+      <div class="about-card__right">
+        <div>
+          <p>Web Developer</p>
+        </div>
+        <div>
+          <h1>Makoto Kami</h1>
+        </div>
+        <div>
+          <p>
+            加味真（かみまこと）と申します！都内のSES企業で約1年フロントエンドの開発を行った後、受託企業に入社し2年間で約10個のプロジェクトにWebエンジニアとして参画。ゼロイチのプロダクトが多かったため速度を追い求めつつ品質の高いサービス開発を心がける。現在は、株式会社ヤプリでノーコードプラットフォームYappliの開発にサーバーサイドエンジニアとして携わっています。
+          </p>
+        </div>
+      </div>
     </div>
     <div class="social-icons">
-      <p class="field">
+      <p class="social-icons__field">
         <SocialButton
           v-for="(icon, index) in icons"
           :key="index"
@@ -60,38 +70,42 @@ export default Vue.extend({
 <style lang="scss" scoped>
 @import "~/assets/scss/main.scss";
 
-.about-desc {
-  > p {
-    font-family: "Murecho", sans-serif;
-    font-weight: 300;
-    line-height: 2em;
-    font-size: 16px;
-  }
-}
 .profile-image {
   > img {
     object-fit: cover;
-    max-width: 240px;
-    border-radius: 30px;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 1px solid $color-text-main;
     margin: 40px;
   }
 }
-.about-body {
+.about-card {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__right {
+    flex: 1;
+    > div {
+      margin: 10px 0;
+    }
+    p {
+      font-family: "Murecho", sans-serif;
+      font-weight: 300;
+      line-height: 25px;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
-  .about-body {
+  .about-card {
     flex-direction: column;
   }
 }
-
-.about-desc {
-  flex: 1;
-}
-.field {
-  display: flex;
-  justify-content: center;
+.social-icons {
+  margin-top: 10px;
+  &__field {
+    display: flex;
+    justify-content: center;
+  }
 }
 </style>
