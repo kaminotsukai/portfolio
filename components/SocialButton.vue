@@ -42,6 +42,10 @@ export default Vue.extend({
   justify-content: center;
   align-items: center;
 
+  &:hover {
+    background-color: #282828;
+  }
+
   > img {
     height: 20px;
     width: 20px;
