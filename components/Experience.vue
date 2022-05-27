@@ -15,23 +15,13 @@
           </h3>
           <p>{{ company.during.start }} - {{ company.during.end }}</p>
           <div class="career-body">
-            <p class="list-title">業務内容</p>
+            <p class="list-title">内容</p>
             <ul>
               <li
                 v-for="(desc, index) in company.job_descriptions"
                 :key="index"
               >
                 {{ desc }}
-              </li>
-            </ul>
-
-            <p class="list-title">経験</p>
-            <ul>
-              <li
-                v-for="(experience, index) in company.experiences"
-                :key="index"
-              >
-                {{ experience }}
               </li>
             </ul>
           </div>
@@ -58,15 +48,10 @@ export default Vue.extend({
             end: "Present",
           },
           job_descriptions: [
-            "Yappliの設計・開発",
-            "機能改善、インシデント対応",
-          ],
-          experiences: [
-            "Go/gRPCを用いたWebアプリケーションの開発",
+            "Go/gRPCを用いた大規模Webアプリケーションの開発",
             "Nuxt/TypeScriptを用いたフロントエンド開発",
             "GCP, AWSを用いた集計・分析基盤の構築",
-            "testingパッケージを用いた単体テストの作成",
-            "AppsFlyer Data Lockerを利用したBigQueryへのローデータエクスポート",
+            "機能改善、インシデント対応",
           ],
         },
         {
@@ -78,28 +63,10 @@ export default Vue.extend({
             end: "October 2021",
           },
           job_descriptions: [
-            "Laravel/Vue.jsを用いたWebアプリケーション開発",
+            "Laravelを用いたWebアプリケーション開発",
+            "Vue.jsを用いたフロントエンド開発（主にElementUIを使用）",
+            "約10個の新規サービス開発を担当",
             "メンバーの技術サポート、工数管理",
-          ],
-          experiences: [
-            "不動産売買システムの新規開発",
-            "不動産ポータルサイトの新規開発",
-            "学習支援サービスの開発",
-            "チャットボット管理システムの開発",
-            "M&Aマッチングサービスのプロトタイプ開発",
-            "サプリメントECサイトのリプレース業務",
-            "Pupeteerを用いたスクレイピングスクリプトの作成",
-            "Stripeを用いた決済処理の作成",
-            "Line Messaging SDKを用いたチャットボットの開発",
-            "Slackへのアラート通知作成",
-            "AWSを用いたインフラの構築",
-            "PHPUnitによる単体テストの導入",
-            "AdobeXDを用いたデザインカンプの作成",
-            "Pub, Stylusを用いたLPの作成",
-            "issue駆動開発の導入",
-            "コーディング規約の策定",
-            "Dockerによるローカル開発の導入",
-            "クライアント用のドキュメント作成",
           ],
         },
         {
@@ -113,10 +80,6 @@ export default Vue.extend({
           job_descriptions: [
             "Nuxt.jsを用いたフロントエンド開発",
             "Javaを用いたAndroidアプリの改修業務",
-          ],
-          experiences: [
-            "オンラインストレージサービスのリプレース業務",
-            "チャットアプリの改修業務",
           ],
         },
       ],
