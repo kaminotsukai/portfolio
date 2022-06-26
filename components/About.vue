@@ -61,6 +61,11 @@ export default Vue.extend({
           link: "https://makoo5.hatenablog.com/",
           imageSrc: "hatena-bookmark-svgrepo-com.svg",
         },
+        {
+          name: "wantedly",
+          link: "https://www.wantedly.com/id/makoto_kami",
+          imageSrc: "Wantedly_Mark_LightBG.svg",
+        },
       ],
     };
   },
