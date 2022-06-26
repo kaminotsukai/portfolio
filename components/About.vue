@@ -3,7 +3,7 @@
     <div class="about-card">
       <div>
         <figure class="profile-image">
-          <img src="~/assets/images/profile.png" alt="profile" />
+          <img src="~/assets/images/profile.JPG" alt="profile" />
         </figure>
       </div>
       <div class="about-card__right">
@@ -87,7 +87,8 @@ export default Vue.extend({
 .profile-image {
   > img {
     object-fit: cover;
-    max-width: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     border: 1px solid $color-text-main;
     margin: 40px;
