@@ -62,9 +62,9 @@ export default Vue.extend({
           imageSrc: "hatena-bookmark-svgrepo-com.svg",
         },
         {
-          name: "wantedly",
-          link: "https://www.wantedly.com/id/makoto_kami",
-          imageSrc: "Wantedly_Mark_LightBG.svg",
+          name: "LinkedIn",
+          link: "https://www.linkedin.com/in/makoto-kami-a66834243/",
+          imageSrc: "LinkedIn_icon_circle.svg.png",
         },
       ],
     };
