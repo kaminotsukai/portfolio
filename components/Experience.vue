@@ -1,33 +1,27 @@
 <template>
   <div class="career-container">
-    <Tabs>
-      <TabPane
+    <el-timeline>
+      <el-timeline-item
         v-for="(company, index) in companies"
         :key="index"
-        :label="company.name"
+        :timestamp="company.timestamp"
+        placement="top"
       >
-        <div>
-          <h3 class="career-title">
-            <span>{{ company.job }}</span>
-            <span class="company">
-              <a :href="company.url" target="_blank">@{{ company.name }}</a>
-            </span>
+        <el-card>
+          <h3>
+            <a target="_black" :href="company.url">{{ company.name }}</a> -
+            {{ company.job }}
           </h3>
-          <p>{{ company.during.start }} - {{ company.during.end }}</p>
-          <div class="career-body">
-            <p class="list-title">内容</p>
+          <div class="job-description">
             <ul>
-              <li
-                v-for="(desc, index) in company.job_descriptions"
-                :key="index"
-              >
-                {{ desc }}
+              <li v-for="(job, index) in company.job_descriptions" :key="index">
+                {{ job }}
               </li>
             </ul>
           </div>
-        </div>
-      </TabPane>
-    </Tabs>
+        </el-card>
+      </el-timeline-item>
+    </el-timeline>
   </div>
 </template>
 
@@ -40,43 +34,34 @@ export default Vue.extend({
     return {
       companies: [
         {
-          name: "ヤプリ",
+          name: "株式会社ヤプリ",
           job: "サーバーサイドエンジニア",
           url: "https://yappli.co.jp/",
-          during: {
-            start: "November 2021",
-            end: "Present",
-          },
+          timestamp: "November 2021 - Present",
           job_descriptions: [
+            "自社サービスの設計・開発・運用を担当",
+            "機能改善、インシデント対応",
             "Go/gRPCを用いた大規模Webアプリケーションの開発",
             "Nuxt/TypeScriptを用いたフロントエンド開発",
             "GCP, AWSを用いた集計・分析基盤の構築",
-            "機能改善、インシデント対応",
           ],
         },
         {
-          name: "GIBJapan",
+          name: "株式会社GIBJapan",
           job: "Webエンジニア",
           url: "https://gibjapan.org/",
-          during: {
-            start: "January 2020",
-            end: "October 2021",
-          },
+          timestamp: "January 2020 - October 2021",
           job_descriptions: [
             "Laravelを用いたWebアプリケーション開発",
-            "Vue.jsを用いたフロントエンド開発（主にElementUIを使用）",
-            "約10個の新規サービス開発を担当",
+            "Vue.jsを用いたフロントエンド開発",
             "メンバーの技術サポート、工数管理",
           ],
         },
         {
-          name: "リアルタイムメディア",
+          name: "リアルタイムメディア株式会社",
           job: "フロントエンドエンジニア",
           url: "https://www.i-freek.co.jp/company/outline/",
-          during: {
-            start: "January 2019",
-            end: "November 2019",
-          },
+          timestamp: "January 2019 - November 2019",
           job_descriptions: [
             "Nuxt.jsを用いたフロントエンド開発",
             "Javaを用いたAndroidアプリの改修業務",
@@ -114,6 +99,9 @@ export default Vue.extend({
     margin-bottom: 3px;
   }
 }
+.job-description {
+  padding: 16px;
+}
 .list-title {
   margin-left: -15px;
   margin-top: 2em;
@@ -122,18 +110,7 @@ export default Vue.extend({
 </style>
 
 <style lang="scss">
-.ivu-tabs-tab {
-  color: #ccd6f6;
-}
-.ivu-tabs-tab-active {
-  color: #64ffda !important;
-  background-color: #112240;
-}
-.ivu-tabs-bar {
-  border-bottom: 1px solid #233554;
-}
-.ivu-tabs-ink-bar {
-  height: 3px;
-  background-color: #64ffda !important;
+.el-timeline-item__timestamp {
+  font-size: 14px;
 }
 </style>

@@ -1,13 +1,11 @@
 <template>
   <div>
-    <Hero />
     <BaseSection>
       <About />
     </BaseSection>
-    <BaseSection title="Experience...">
+    <BaseSection title="WORK EXPERIENCE">
       <Experience />
     </BaseSection>
-    <!-- <Work /> -->
   </div>
 </template>
 

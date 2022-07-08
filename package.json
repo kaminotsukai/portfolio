@@ -11,6 +11,7 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",
     "core-js": "^3.19.3",
+    "element-ui": "^2.15.9",
     "nuxt": "^2.15.8",
     "view-design": "^4.7.0",
     "vue": "^2.6.14",
