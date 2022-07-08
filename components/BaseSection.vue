@@ -28,5 +28,6 @@ export default Vue.extend({
   font-size: min(5vw, 40px);
   text-align: center;
   margin-bottom: 2em;
+  text-transform: uppercase;
 }
 </style>

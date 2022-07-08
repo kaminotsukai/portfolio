@@ -3,7 +3,7 @@
     <BaseSection>
       <About />
     </BaseSection>
-    <BaseSection title="WORK EXPERIENCE">
+    <BaseSection title="work experience">
       <Experience />
     </BaseSection>
   </div>
@@ -12,18 +12,14 @@
 <script lang="ts">
 import Vue from "vue";
 import BaseSection from "@/components/BaseSection.vue";
-import Hero from "@/components/Hero.vue";
 import About from "@/components/About.vue";
-import Work from "@/components/Work.vue";
 import Experience from "@/components/Experience.vue";
 
 export default Vue.extend({
   name: "IndexPage",
   components: {
     BaseSection,
-    Hero,
     About,
-    Work,
     Experience,
   },
 });
