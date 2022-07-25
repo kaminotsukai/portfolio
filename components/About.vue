@@ -15,7 +15,7 @@
         </div>
         <div>
           <p>
-            SES企業で約1年フロントエンドの開発を行った後、受託企業に入社してシステム開発を担当。現在は株式会社ヤプリでサーバーサイドエンジニアとして働いております。<br />
+            SES企業で約1年フロントエンドの開発を行った後、受託企業に入社してWebアプリケーション開発を担当。現在は株式会社ヤプリでサーバーサイドエンジニアとして働いております。<br />
             Webアプリケーション開発を得意としており、設計から開発・運用まで行うことが可能です。
             コンピューターサイエンスやプロジェクトマネジメントなどを身につけるために学習に励んでおります。
             所持資格は、ITパスポート・LPIC1
@@ -63,11 +63,6 @@ export default Vue.extend({
           name: "hatena",
           link: "https://makoo5.hatenablog.com/",
           imageSrc: "hatena-bookmark-svgrepo-com.svg",
-        },
-        {
-          name: "LinkedIn",
-          link: "https://www.linkedin.com/in/makoto-kami-a66834243/",
-          imageSrc: "LinkedIn_icon_circle.svg.png",
         },
       ],
     };
